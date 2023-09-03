@@ -54,6 +54,7 @@ function App() {
   };
 
   const onSendMessage = (message) => {
+    if (!message) return;
     const newMember = { ...member };
     const value = { user: newMember, m: message };
     mainDrone.send(value);
