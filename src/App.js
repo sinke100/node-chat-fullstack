@@ -54,9 +54,10 @@ function App() {
   };
 
   const onSendMessage = (message) => {
-    if (!message) return;
+    const trimmedMessage = message.trim();
+    if (!trimmedMessage) return;
     const newMember = { ...member };
-    const value = { user: newMember, m: message };
+    const value = { user: newMember, m: trimmedMessage };
     mainDrone.send(value);
   };
   if (!member.clientData.username) {
