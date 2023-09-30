@@ -1,10 +1,10 @@
-body{
-background-color:burlywood;
-    }
+body {
+  background-color: #8790de;
+}
 
 .name-input {
-text-align:center;
-    }
+  text-align: center;
+}
 
 .App {
   display: flex;
@@ -21,7 +21,7 @@ text-align:center;
   color: white;
   border-radius: 2rem;
   margin: 0 auto;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 .Messages-list {
@@ -50,11 +50,11 @@ text-align:center;
   display: inline-block;
 }
 
-.currentMember > .Message-content {
+.currentMember>.Message-content {
   align-items: flex-end;
 }
 
-.Messages-message > .avatar {
+.Messages-message>.avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -62,14 +62,13 @@ text-align:center;
   margin: 0 10px -10px;
 }
 
-.Message-content > .username {
+.Message-content>.username {
   display: block;
-  //color: gray;
   font-size: 24px;
   padding-bottom: 4px;
 }
 
-.Message-content > .text {
+.Message-content>.text {
   padding: 10px;
   max-width: 400px;
   margin: 0;
@@ -79,7 +78,7 @@ text-align:center;
   display: inline-block;
 }
 
-.currentMember > .Message-content .text {
+.currentMember>.Message-content .text {
   background-color: orangered;
 }
 
